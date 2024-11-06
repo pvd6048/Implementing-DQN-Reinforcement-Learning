@@ -10,7 +10,7 @@ This course project presents the development of a reinforcement learning agent f
 
 
 
-CartPole
+**CartPole**
 
 As the agent observes the current state of the environment and chooses an action, the environment transitions to a new state, and also returns a reward that indicates the consequences of the action. In this task, rewards are +1 for every incremental timestep and the environment terminates if the pole falls over too far or the cart moves more than 2.4 units away from center. This means better performing scenarios will run for longer duration, accumulating larger return.
 
