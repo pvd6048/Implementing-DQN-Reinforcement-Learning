@@ -6,7 +6,8 @@ This course project presents the development of a reinforcement learning agent f
 
 <img width="612" alt="image" src="https://github.com/user-attachments/assets/5843e6f8-3a99-458c-b9fa-51d19fa3f069">
 
-****Learning rate****
+****Learning rate****:
+
 The learning rate or step size determines to what extent newly acquired information overrides old information. A factor of 0 makes the agent learn nothing (exclusively exploiting prior knowledge), while a factor of 1 makes the agent consider only the most recent information (ignoring prior knowledge to explore possibilities).
 
 ****Discount Factor****
@@ -18,7 +19,7 @@ Since Q-learning is an iterative algorithm, it implicitly assumes an initial con
 
 
 
-******CartPole******
+# ******CartPole******
 
 As the agent observes the current state of the environment and chooses an action, the environment transitions to a new state, and also returns a reward that indicates the consequences of the action. In this task, rewards are +1 for every incremental timestep and the environment terminates if the pole falls over too far or the cart moves more than 2.4 units away from center. This means better performing scenarios will run for longer duration, accumulating larger return.
 
