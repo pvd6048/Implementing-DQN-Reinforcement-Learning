@@ -6,11 +6,19 @@ This course project presents the development of a reinforcement learning agent f
 
 <img width="612" alt="image" src="https://github.com/user-attachments/assets/5843e6f8-3a99-458c-b9fa-51d19fa3f069">
 
-<img width="612" alt="image" src="https://github.com/user-attachments/assets/8529fae1-7e40-49ef-bad6-bfb57378cf79">
+****Learning rate****
+The learning rate or step size determines to what extent newly acquired information overrides old information. A factor of 0 makes the agent learn nothing (exclusively exploiting prior knowledge), while a factor of 1 makes the agent consider only the most recent information (ignoring prior knowledge to explore possibilities).
+
+****Discount Factor****
+The discount factor, denoted as gamma, determines how much importance an agent places on future rewards. If gamma is set to 0, the agent becomes "myopic" or short-sighted, only valuing immediate rewards, rt​. As gamma approaches 1, the agent increasingly prioritizes long-term rewards, aiming to maximize future gains.
+
+****Initial Conditions****
+Since Q-learning is an iterative algorithm, it implicitly assumes an initial condition before the first update occurs. High initial values, known as "optimistic initial conditions," can promote exploration: regardless of the selected action, the update rule will reduce its value, increasing the probability of choosing other actions. The first reward can be used to reset the initial conditions. According to this approach, the first time an action is taken, the reward is used to set the Q value, enabling immediate learning when rewards are fixed and deterministic.
+![image](https://github.com/user-attachments/assets/dcf7bc2a-6275-4e64-88ac-08b8ec3a9888)
 
 
 
-**CartPole**
+******CartPole******
 
 As the agent observes the current state of the environment and chooses an action, the environment transitions to a new state, and also returns a reward that indicates the consequences of the action. In this task, rewards are +1 for every incremental timestep and the environment terminates if the pole falls over too far or the cart moves more than 2.4 units away from center. This means better performing scenarios will run for longer duration, accumulating larger return.
 
